@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+}
+.categoryButton {
+  display: flex;
+  flex-wrap: wrap;
+}
+button {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  height: 40px;
+  min-width: 200px;
+  padding: 5px;
+  margin: auto;
+  cursor: pointer;
+}
+button:focus {
+  background-color: white;
+  color: black;
+}
+.button-active {
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin: 25px;
+}
+.cards {
+  width: 30%;
+  margin: auto;
+  display: flex;
+}
+
+img {
+  margin-bottom: auto;
+  margin-top: auto;
+  max-height: 250px;
+  object-fit: contain;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .cards {
+    width: 30%;
+    margin: auto;
+    display: block;
+  }
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .cards {
+    width: 45%;
+    margin: auto;
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .cards {
+    width: 55%;
+    margin: auto;
+    display: block;
+  }
+}
