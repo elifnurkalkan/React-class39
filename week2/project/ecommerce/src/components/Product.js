@@ -12,7 +12,7 @@ export default function Product() {
     (async () => {
       try {
         const response = await fetch(
-          `https://fakestoreapis.com/products/${params.productId}`,
+          `https://fakestoreapi.com/products/${params.productId}`,
         );
         const data = await response.json();
         setProduct(data);
